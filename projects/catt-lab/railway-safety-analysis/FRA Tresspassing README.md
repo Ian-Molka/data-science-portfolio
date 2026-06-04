@@ -1,60 +1,124 @@
-# Railway Safety and Incident Analytics
+# FRA Railroad Trespassing Analysis
 
 ## Overview
 
-This project analyzes railway-related incidents using geospatial techniques and transportation safety analytics.
+This project analyzes Federal Railroad Administration (FRA) trespassing incidents across the United States using geospatial analytics, demographic data integration, and transportation safety methodologies.
 
-The objective was to associate incidents with railway infrastructure and identify spatial patterns that could inform safety improvements.
+The objective was to identify geographic trespassing hotspots, understand contributing factors, and provide actionable insights that could support railroad safety initiatives and public awareness efforts.
 
-## Problem Statement
+---
 
-Railway incidents can be difficult to analyze due to fragmented datasets and geographic complexity.
+## Business Problem
 
-This project created a repeatable process for linking incidents to railway assets and identifying high-risk corridors.
+Railroad trespassing remains one of the leading causes of rail-related fatalities and injuries in the United States.
+
+FRA incident records contain valuable information regarding trespassing events, but these datasets are often difficult to analyze due to fragmented reporting systems, geographic complexity, and limited integration with supporting infrastructure and demographic datasets.
+
+This project created a repeatable analytics framework that links trespassing incidents to rail infrastructure, crossing inventory data, and demographic characteristics to better understand risk patterns.
+
+---
 
 ## Data Sources
 
-- Railway Incident Records
-- Rail Network GIS Data
-- Crossing Inventory Data
-- County and State Geographic Data
+### Federal Railroad Administration (FRA)
+
+- Trespassers Dataset
+- Trespassing Reports Dataset
+
+### Rail Infrastructure
+
+- North American Rail Network (NARN)
+- Railroad ownership information
+- Rail segment geometry
+
+### Crossing Inventory
+
+- FRA Grade Crossing Inventory
+
+### Demographic Data
+
+- United States Census Bureau
+- County-level demographic information
+- Population characteristics
+- Education and language statistics
+
+---
 
 ## Methodology
 
 ### Data Integration
-- Data cleaning
-- Geographic standardization
-- Dataset reconciliation
+
+- Merged FRA trespassing datasets
+- Standardized incident records
+- Cleaned railroad ownership fields
+- Categorized trespassing activity types
 
 ### Geospatial Processing
-- Nearest-neighbor matching
-- Spatial joins
-- Distance calculations
 
-### Analysis
+- County assignment through spatial joins
+- Nearest rail segment matching
+- Railroad infrastructure conflation
+- Crossing inventory integration
+
+### Safety Analytics
+
 - Incident frequency analysis
-- Corridor-level aggregation
-- Geographic trend identification
+- Rail corridor hotspot identification
+- County-level trend analysis
+- Railroad ownership comparisons
+
+### Demographic Analysis
+
+- Census data integration
+- Community characteristic analysis
+- Geographic risk factor exploration
+
+---
 
 ## Technologies
 
 - Python
-- GeoPandas
 - Pandas
+- GeoPandas
+- Shapely
+- NumPy
 - Tableau
-- GIS Data
+- GIS
+- Spatial Analysis
 
-## Results
+---
 
-- Linked thousands of incidents to railway infrastructure
-- Identified high-risk corridors
-- Developed interactive geographic dashboards
-- Improved visibility into railway safety patterns
+## Key Results
+
+- Processed and standardized thousands of FRA trespassing incidents
+- Matched incidents to rail infrastructure nationwide
+- Created railroad segment incident counts
+- Integrated demographic and census information
+- Developed interactive Tableau dashboards for exploration and reporting
+- Produced a repeatable geospatial safety analytics workflow
+
+---
+
+## Dashboard
+
+![FRA Trespassing Dashboard](railway_dashboard.png)
+
+---
 
 ## Skills Demonstrated
 
-- GIS Analytics
-- Spatial Data Processing
+- Geospatial Analytics
+- Transportation Safety Analytics
 - Data Engineering
-- Transportation Analytics
-- Dashboard Development
+- GIS
+- Spatial Joins
+- Data Visualization
+- Statistical Analysis
+- Python Development
+- Tableau Dashboard Development
+
+---
+
+## Business Impact
+
+This project transformed raw FRA trespassing records into an integrated analytics platform that enables transportation agencies, researchers, and safety professionals to identify trespassing hotspots, understand geographic risk patterns, and support data-driven safety initiatives.
